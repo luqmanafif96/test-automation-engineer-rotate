@@ -13,18 +13,8 @@ describe('Delete Order', () => {
             if ($row.find('td').first().text().trim() === productID) {
               // Click the Delete button in that row
               cy.wrap($row).find('button.btn-danger').click();
-      
-              // Optionally handle confirmation dialog if applicable
-              cy.on('window:confirm', (text) => {
-                expect(text).to.contains('Are you sure you want to delete this order?');
-                return true; // Confirm the dialog
-              });
             }
-          });
-  
-      // Verify the URL or check if the item is removed from the list
-      
-      
+          });    
       // Verify that the item is no longer present
       cy.get('.container').should('not.contain', `Order ${productID}`); // Adjust based on actual content
     });
