@@ -41,4 +41,10 @@ note: swagger api available at `localhost:3000/api`
 
 ## Submitting your test
 
-- After you have completed and tested your work, please submit a link of our repository to the hiring manager.
+- After you have completed and tested your work, please submit a link of our repository to the hiring manager. z
+
+
+## Side Note 
+- e2e testing under folder frontend/cypress
+- for backend testing under folder backend/src/integration
+- test plan under folder Document/Test Plan
